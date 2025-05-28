@@ -1,0 +1,102 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 1000;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  transition: all 0.3s;
+}
+
+.navbar-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+  user-select: none;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background: #fff;
+  color: #ff6f61;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  background: #ff6f61;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+  outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  .navbar-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    min-height: 110px;
+  }
+  .navbar-name {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .navbar-buttons {
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Center everything when stacked */
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    padding-bottom: 8px;
+  }
+}
+
+/* Add space below navbar for page content to not hide under it */
+body {
+  padding-top: 64px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding-top: 110px;
+  }
+}
