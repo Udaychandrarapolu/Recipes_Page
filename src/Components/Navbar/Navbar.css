@@ -6,7 +6,7 @@
   left: 0;
   width: 100vw;
   background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   height: 64px;
   display: flex;
@@ -48,7 +48,7 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   transition: background 0.2s, color 0.2s, transform 0.15s;
 }
 
@@ -69,11 +69,13 @@
     padding: 12px 8px;
     min-height: 110px;
   }
+
   .navbar-name {
     margin-bottom: 10px;
     text-align: center;
     font-size: 1.5rem;
   }
+
   .navbar-buttons {
     flex-direction: row;
     gap: 14px;
